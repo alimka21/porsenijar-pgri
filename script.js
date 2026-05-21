@@ -1,5 +1,5 @@
 // GANTI DENGAN URL WEB APP GOOGLE APPS SCRIPT ANDA
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxmaD_8N_ngEzUrcUKGoq5oi1j9mAgb0rDy9ufYFN5l95y8IDQckHo1D-OTuqsDmd4Gbg/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwci6hg6SOOlGFrCc5QuaGfXMVHZhCdJYrkLMjtHJc__IvfbdfuYMQJBiirn_UYaPbyIg/exec";
 
 document.getElementById('cek-form').addEventListener('submit', async function(e) {
   e.preventDefault();
