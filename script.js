@@ -33,7 +33,6 @@ document.getElementById('cek-form').addEventListener('submit', async function(e)
       return;
     }
     
-    // Tampilan hasil berdasarkan status
     switch(data.verifikasi) {
       case "Diterima":
         resultContent.innerHTML = `
@@ -85,7 +84,6 @@ document.getElementById('cek-form').addEventListener('submit', async function(e)
         break;
         
       default:
-        // Kondisi jika Kolom P masih kosong
         resultContent.innerHTML = `
           <div class="text-center space-y-3">
             <div class="text-slate-400 text-5xl"><i class="fa-solid fa-clock-rotate-left"></i></div>
@@ -95,6 +93,7 @@ document.getElementById('cek-form').addEventListener('submit', async function(e)
             </div>
           </div>
         `;
+    }
     
   } catch (error) {
     loadingSection.classList.add('hidden');
