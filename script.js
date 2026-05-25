@@ -85,14 +85,16 @@ document.getElementById('cek-form').addEventListener('submit', async function(e)
         break;
         
       default:
+        // Kondisi jika Kolom P masih kosong
         resultContent.innerHTML = `
           <div class="text-center space-y-3">
-            <div class="text-slate-400 text-5xl"><i class="fa-solid fa-hourglass-half"></i></div>
-            <h3 class="text-lg font-bold text-slate-700">Dalam Proses Verifikasi</h3>
-            <p class="text-slate-500 text-sm">Berkas Anda telah tersimpan. Mohon tunggu verifikator panitia melakukan pemeriksaan.</p>
+            <div class="text-slate-400 text-5xl"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            <h3 class="text-lg font-bold text-slate-700">Status Belum Tersedia</h3>
+            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl text-slate-600 shadow-sm mt-4">
+              <p class="text-sm font-medium">Belum dilakukan proses verifikasi, harap cek secara berkala.</p>
+            </div>
           </div>
         `;
-    }
     
   } catch (error) {
     loadingSection.classList.add('hidden');
