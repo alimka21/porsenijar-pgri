@@ -15,7 +15,6 @@ document.getElementById('cek-form').addEventListener('submit', async function(e)
   loadingSection.classList.remove('hidden');
   
   try {
-    // HANYA MENGIRIMKAN searchKey (NIP/NPA) TANPA EMAIL
     const response = await fetch(`${WEB_APP_URL}?searchKey=${encodeURIComponent(searchKey)}`);
     const data = await response.json();
     
@@ -27,7 +26,7 @@ document.getElementById('cek-form').addEventListener('submit', async function(e)
         <div class="text-center space-y-4">
           <div class="text-red-500 text-5xl"><i class="fa-solid fa-circle-xmark"></i></div>
           <h3 class="text-lg font-bold text-slate-800">Data Tidak Ditemukan</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">NIP atau NPA yang Anda masukkan tidak terdaftar dalam basis data panitia. Silakan periksa kembali ketikan Anda.</p>
+          <p class="text-slate-600 text-sm leading-relaxed">Nomor NPA PGRI yang Anda masukkan tidak terdaftar dalam basis data panitia. Silakan periksa kembali ketikan Anda.</p>
         </div>
       `;
       return;
