@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cek Kelulusan PORSENIJAR PGRI 2026</title>
   
-  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/2/2a/Persatuan_Guru_Republik_Indonesia.png">
-  
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/id/thumb/1/1a/Persatuan_Guru_Republik_Indonesia.png/200px-Persatuan_Guru_Republik_Indonesia.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,9 +13,8 @@
 
   <header class="bg-blue-900 text-white py-6 shadow-md text-center">
     <div class="flex flex-col items-center justify-center space-y-3">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Persatuan_Guru_Republik_Indonesia.png" 
+      <img src="https://upload.wikimedia.org/wikipedia/id/thumb/1/1a/Persatuan_Guru_Republik_Indonesia.png/200px-Persatuan_Guru_Republik_Indonesia.png" 
            alt="Logo PGRI" class="h-16 w-16 drop-shadow-md bg-white rounded-full p-1">
-      
       <div>
         <h1 class="text-2xl font-bold tracking-wide uppercase">PORSENIJAR PGRI 2026</h1>
         <p class="text-sm text-blue-200 mt-1">Sistem Informasi Pengumuman Seleksi Peserta</p>
@@ -35,13 +33,9 @@
             <input type="text" id="searchKey" required placeholder="Masukkan NIP atau NPA Anda" 
               class="w-full px-4 py-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
           </div>
-          <div>
-            <label class="block text-sm font-semibold text-slate-600 mb-1">Email Terdaftar</label>
-            <input type="email" id="email" required placeholder="contoh@email.com" 
-              class="w-full px-4 py-2.5 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
-          </div>
+          
           <button type="submit" id="btn-submit"
-            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-xl transition duration-200 flex items-center justify-center space-x-2">
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-xl transition duration-200 flex items-center justify-center space-x-2 mt-4">
             <span>Periksa Status</span>
             <i class="fa-solid fa-paper-plane text-sm"></i>
           </button>
@@ -50,14 +44,12 @@
 
       <div id="loading-section" class="hidden text-center py-8 space-y-3">
         <div class="animate-spin text-blue-600 text-4xl"><i class="fa-solid fa-circle-notch"></i></div>
-        
         <p class="text-slate-500 font-medium text-sm">Memvalidasi data ke server...</p>
         <p class="text-slate-400 text-xs mt-1">Proses ini mungkin memakan waktu 5-10 detik.</p>
       </div>
 
       <div id="result-section" class="hidden transition-all">
         <div id="result-content"></div>
-        
         <button onclick="resetForm()" 
           class="w-full mt-6 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium py-2.5 rounded-xl transition text-sm text-center block">
           <i class="fa-solid fa-arrow-left mr-2"></i> Kembali
